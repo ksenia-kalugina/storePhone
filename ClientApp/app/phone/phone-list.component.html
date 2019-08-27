@@ -1,0 +1,16 @@
+﻿<h2 class="mb-3">{{nameCategory}}</h2>
+<div class="row">
+    <div class="col-lg-3 item" *ngFor="let p of phones">
+
+        <div class="divImg"><img src="{{p?.img}}" alt="{{p?.name}}" class="imgItem" /></div>
+        <br />
+        <h2 class="nameItem"><a [routerLink]="['phone', p.id]">{{p?.name}}</a></h2>
+        <p>{{p?.shortDescription}}</p>
+        <p>
+            Цена: {{p?.price}}
+            <a [routerLink]="['phone', p.id]" class="nav-link btn btn-warning moreInformation">Подробнее</a>
+        </p>
+        <p><a class="btn btn-warning moreInformation addItem" (click)="submit(p.id)">+</a></p>
+
+    </div>
+</div>  

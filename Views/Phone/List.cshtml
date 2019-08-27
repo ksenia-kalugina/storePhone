@@ -1,0 +1,23 @@
+﻿
+    
+        @{
+            if (Model.currCategory == "")
+            {
+                <h1>Все телефоны</h1>
+            }
+            else
+            {
+                <h1>@Model.currCategory</h1>
+            }
+        }
+        
+    
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Phone phone in Model.allPhones)
+        {
+            @Html.Partial("AllPhones", phone)                
+        }
+    }
+
+</div>

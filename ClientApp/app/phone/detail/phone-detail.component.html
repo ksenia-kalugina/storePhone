@@ -1,0 +1,22 @@
+﻿<div class="container marketing itemDetail" *ngIf="loaded">
+    <table>
+        <tr>
+            <td>
+                <div class=" detailImg"><img src="{{phone.img}}" alt="{{phone.name}}" class="imgItem" /></div> 
+                <p></p>
+            </td>
+            <td>
+                <div class="description">
+                    <h2 class="nameItem">{{phone.name}}</h2>
+                    <p></p>
+                    <p></p>
+                    <p>Описание: {{phone.longDescription}}</p>
+                    <p>{{phone.shortDescription}}</p>
+                    <p>Цена: {{phone.price}}</p>
+                    <p class="text-right"><a routerLink="/" class="btn btn-warning  mr-2">Назад</a><a class="btn btn-warning " (click)="submit()">Добавить в корзину</a></p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+

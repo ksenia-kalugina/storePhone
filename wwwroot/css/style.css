@@ -1,0 +1,117 @@
+﻿
+body {
+    background: #EDEDED;
+    box-sizing: border-box;
+}
+
+.imgItem {
+    height: 200px;    
+}
+
+.nameItem {
+    font-size: 18px;
+}
+.inline_block {
+    display: inline;
+}
+.item {
+    position: relative;
+    
+    width: 300px;
+    height: 450px;
+    background: #FFFFFF;
+    padding: 25px;
+    border: 4px solid #FFFFFF;
+}
+
+.item:hover {
+    border-color: #FFC107;
+}
+
+.divImg{
+   text-align:center;
+}
+
+a.moreInformation {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+p{
+    
+}
+
+.imgMainPage {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://showitbetter.com/wp-content/uploads/27.jpg) repeat-y #fc0;
+    background-size: 100%;
+    background-position-y: center;
+}
+
+.imgGrad {    
+    height: 400px;
+    width: 100%;
+   
+    background-size: 100%;
+}
+
+.itemDetail{
+    background-color:white;
+    padding:30px;
+    margin-bottom:50px;
+}
+
+.detailImg {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.description{
+    padding-left: 15px;
+}
+
+
+.btn.btn-warning.moreInformation.addItem {
+    height: 40px;
+    top: 15px;
+    right: 15px;
+}
+
+.itemBucket{
+    background-color: white;
+}
+
+.bucketImg {
+    height: 80px;
+    
+}
+
+.divImgBucket {
+    padding-right: 15px;
+    float: left;
+}
+
+.infoBucket{
+       padding:20px;
+}
+
+.delete{
+    position:absolute;
+    bottom:15px;
+    right:15px;
+
+}
+
+.detailBut{
+    position:relative;
+    left:250px;
+}
+
+.detailButBack {
+    width:100%;
+}
+

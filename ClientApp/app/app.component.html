@@ -1,0 +1,30 @@
+﻿<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+        <a href="/favorite" class="navbar-brand d-flex align-items-center">
+            <strong>Главная</strong>
+        </a>
+        <a href="/allphones" class="navbar-brand d-flex align-items-center">
+            <strong>Все телефоны</strong>
+        </a>
+        <a href="/smartphone" class="navbar-brand d-flex align-items-center">
+            <strong>Смартфоны</strong>
+        </a>
+        <a href="/usualphone" class="navbar-brand d-flex align-items-center">
+            <strong>Обычные телефоны</strong>
+        </a>
+        <a href="/storeCart" class="navbar-brand d-flex align-items-center">
+            <strong>Корзина</strong>
+        </a>
+        <a class="navbar-brand d-flex align-items-center" (click)="submit()" routerLink="/login"><strong>Выход</strong></a>
+    </div>
+</div>
+<div class="imgMainPage"></div>
+    
+<div class="container mt-5 mb-5">
+    <router-outlet></router-outlet>
+</div>
+
+
+<nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">OAO Интернет магазин мобильных телефонов</a>
+</nav>

@@ -1,0 +1,18 @@
+﻿
+
+    <div class="container marketing itemDetail">
+        <h1>Корзина</h1>
+        <h3 align="center">{{isEmptyStoreCart}}</h3>
+        <div *ngFor="let p of list">
+
+            <div class="alert alert-warning mt-3 infoBucket">
+                <div class="divImgBucket"><img class="bucketImg" src="{{p?.phone.img}}" /></div>
+                <b>Телефон:</b> {{p?.phone.name}}<br />
+                <b>Цена:</b> {{p?.phone.price}}
+                <p><a class="btn btn-warning delete" (click)="submit(p.phone.id)">Удалить</a></p>
+            </div>
+
+
+        </div>
+
+    </div>
