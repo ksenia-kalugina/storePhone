@@ -14,6 +14,7 @@ var PhoneFavoriteListComponent = /** @class */ (function () {
     function PhoneFavoriteListComponent(dataService, router) {
         this.dataService = dataService;
         this.router = router;
+        this.nameCategory = "Популярные телефоны";
     }
     PhoneFavoriteListComponent.prototype.ngOnInit = function () {
         var _this = this;

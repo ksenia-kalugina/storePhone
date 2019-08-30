@@ -23,6 +23,9 @@ var StoreCartComponent = /** @class */ (function () {
             }
         });
         this.dataService.getStoreCartList().subscribe(function (data) { return _this.list = data; });
+        if (this.list == null) {
+            this.isEmptyStoreCart = "Пусто";
+        }
     };
     StoreCartComponent.prototype.submit = function (phoneid) {
         this.dataService.deleteItemInStoreCart(phoneid).subscribe(function (data) { return window.location.reload(); });

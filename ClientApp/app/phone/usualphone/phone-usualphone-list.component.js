@@ -14,6 +14,7 @@ var PhoneUsualphoneListComponent = /** @class */ (function () {
     function PhoneUsualphoneListComponent(dataService, router) {
         this.dataService = dataService;
         this.router = router;
+        this.nameCategory = "Кнопочные телефоны";
     }
     PhoneUsualphoneListComponent.prototype.ngOnInit = function () {
         var _this = this;

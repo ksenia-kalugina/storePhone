@@ -29,6 +29,10 @@ var PhoneDetailComponent = /** @class */ (function () {
             this.dataService.getPhone(this.id)
                 .subscribe(function (data) { _this.phone = data; _this.loaded = true; });
     };
+    PhoneDetailComponent.prototype.submit = function () {
+        var _this = this;
+        this.dataService.addItemInStoreCart(this.phone.id).subscribe(function (data) { return _this.router.navigateByUrl("/storeCart"); });
+    };
     PhoneDetailComponent = __decorate([
         Component({
             templateUrl: './phone-detail.component.html',

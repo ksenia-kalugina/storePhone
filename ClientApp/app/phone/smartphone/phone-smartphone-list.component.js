@@ -14,6 +14,7 @@ var PhoneSmartphoneListComponent = /** @class */ (function () {
     function PhoneSmartphoneListComponent(dataService, router) {
         this.dataService = dataService;
         this.router = router;
+        this.nameCategory = "Смартфоны";
     }
     PhoneSmartphoneListComponent.prototype.ngOnInit = function () {
         var _this = this;

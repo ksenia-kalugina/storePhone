@@ -26,52 +26,52 @@ namespace StorePhone.Controllers
         //[Authorize]
         //[Route("Phone/List")]
         //[Route("Phone/List/{category}")]
-        public ViewResult List(string category)
-        {
+        //public ViewResult List(string category)
+        //{
 
-            string _category = category;
-            IEnumerable<Phone> phones = null;
-            string currCategory = "";
-            if (string.IsNullOrEmpty(category))
-            {
-                phones = _allPhones.Phones.OrderBy(i => i.id);
-            }
-            else
-            {
-                if (string.Equals("smartphone", category, StringComparison.OrdinalIgnoreCase))
-                {
-                    phones = _allPhones.Phones.Where(i => i.Category.categoryName.Equals("Смартфон"));
-                    currCategory = "Смартфоны";
-                }
-                else if (string.Equals("usualphone", category, StringComparison.OrdinalIgnoreCase))
-                {
-                    phones = _allPhones.Phones.Where(i => i.Category.categoryName.Equals("Не смартфон"));
-                    currCategory = "Обычные телефоны";
-                }
+        //    string _category = category;
+        //    IEnumerable<Phone> phones = null;
+        //    string currCategory = "";
+        //    if (string.IsNullOrEmpty(category))
+        //    {
+        //        phones = _allPhones.Phones.OrderBy(i => i.id);
+        //    }
+        //    else
+        //    {
+        //        if (string.Equals("smartphone", category, StringComparison.OrdinalIgnoreCase))
+        //        {
+        //            phones = _allPhones.Phones.Where(i => i.Category.categoryName.Equals("Смартфон"));
+        //            currCategory = "Смартфоны";
+        //        }
+        //        else if (string.Equals("usualphone", category, StringComparison.OrdinalIgnoreCase))
+        //        {
+        //            phones = _allPhones.Phones.Where(i => i.Category.categoryName.Equals("Не смартфон"));
+        //            currCategory = "Обычные телефоны";
+        //        }
 
-            }
-            var phoneObj = new PhoneListViewModel
-            {
-                allPhones = phones,
-                currCategory = currCategory
-            };
+        //    }
+        //    var phoneObj = new PhoneListViewModel
+        //    {
+        //        allPhones = phones,
+        //        currCategory = currCategory
+        //    };
 
-            ViewBag.Title = "Интернет магазин";
+        //    ViewBag.Title = "Интернет магазин";
 
 
-            return View(phoneObj);
-        }
+        //    return View(phoneObj);
+        //}
 
 
         //[Authorize]
         //[Route("Phone/Detail/{phoneID}")]
-        public IActionResult Detail(int phoneID)
-        {
-            Phone item = _allPhones.getObjectPhone(phoneID);
+        //public IActionResult Detail(int phoneID)
+        //{
+        //    Phone item = _allPhones.getObjectPhone(phoneID);
 
-            return View(item);
+        //    return View(item);
 
-        }
+        //}
 
         [HttpGet("allphones")]
         public IEnumerable<Phone> Get()
